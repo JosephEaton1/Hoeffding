@@ -1,3 +1,10 @@
-Repository contains content relevant to 'Hoeffding’s D Test and Measure of Association', written by Joseph W.D. Eaton and William F. Scott.
-This includes data_frames used in examples 7.1 and 7.2, a function to calculate the Dn statistic of a sample (accounting for ties) and calculates the variance of said statistic using the zeta method (see chapter 6).
-Also included is an R script used to tabulate exact Dn distributions using Otten's method (see chapter 2), and an R script used to tabulate the limiting distribution Q (see chapter 4).
+# Hoeffding's D Test and Measure of Association
+
+Repository contains content relevant to 'Hoeffding's D Test and Measure of Association', written by Joseph W.D. Eaton and William F. Scott.
+
+## Repository Contents
+
+- **Example_dataframes.R** - Includes data frames used in examples 7.1 and 7.2.
+- **DnFunction.R** - Contains functions to calculate Dn and the variance of a given sample (using zeta formulae from chapter 6), as well as giving Qn and critical values of Qn (using formulae from chapter 4).
+- **QFunctions.R** - An R script to reproduce the limiting distribution, Q, table (using method from chapter 4).
+- **ExactDnFunctions.R** - Contains functions used to tabulate the exact discrete distribution of Dn (using Otten's method, see chapter 2).
