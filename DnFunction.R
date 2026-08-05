@@ -1,5 +1,7 @@
 Dn <- function(sample){
-  #function calculates Dn (accounting fir ties) and zeta for given sample
+  #function calculates Dn (accounting fir ties)
+  #and variance for given sample
+  #aswell as giving critical values at 10,5,1 significance
   x <- sample[[1]]
   y <- sample[[2]]
   n <- length(x)
@@ -69,12 +71,17 @@ Dn <- function(sample){
   Dn_variance <- 25*zeta_variance /n
   
   table <- data.frame(xi = x, yi = y, ai = a, bi = b, ci = c, di = d)
-  
-  return(list(
+  Qn <- n*D +1/36
+  crit_10 <- 0.047 + 0.127/n + 0.089/(n^2)
+  crit_5 <- 0.058 + 0.193/n + 0.256/(n^2)
+  crit_1 <- 0.087 + 0.333/n + 0.804/(n^2)
+   return(list(
     details = table,
     Dn = D,
-    zeta_mean = zeta_mean,
-    zeta_variance = zeta_variance,
-    Dn_variance = Dn_variance
+    Dn_variance = Dn_variance,
+    Qn = Qn,
+    critical_value_10 = crit_10,
+    critical_Value_5 = crit_5,
+    critical_value_1 = crit_1
   ))
 }
