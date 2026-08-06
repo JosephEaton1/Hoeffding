@@ -11,3 +11,4 @@ Repository contains content relevant to 'Hoeffding's D Test and Measure of Assoc
 - **QFunctions.R** - An R script to reproduce the limiting distribution, Q, table (using method from Section 4).
 - **ExactDnFunctions.R** - Contains functions used to tabulate the exact discrete distribution of Dn (using Otten's method, see Section 2).
 ### Tables
+- Contains quantile and distribution tables of Q and Dn (see Appendix)
