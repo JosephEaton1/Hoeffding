@@ -117,5 +117,3 @@ Dn_table <- function(n, k) {
 Dn_quantile <- function(cdf_table, p) {
   stats::approx(x = cdf_table$CDF, y = cdf_table$Dn, xout = p)$y
 }
-
-#----Add function to perform OLS regression----
