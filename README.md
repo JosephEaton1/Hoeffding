@@ -12,4 +12,6 @@ Repository contains content relevant to 'Hoeffding's D Test and Measure of Assoc
 - **Example_dataframes.R** - Includes data frames used in Examples 7.1 and 7.2.
 - **ExactDnData.RData** - Contains an R environment with complete Dn tables, the data is stored in tabs_clean a list such that tabs_clean[[n-4]] contains a full distribution of Dn. Note, refer to Tables folder for quick quantile tables, this data is quite messy.
 ### Tables
-- Contains quantile and distribution tables of Q and Dn (see Appendix)
+- **Dn_quantiles.png** - Table of quantiles for Dn from n = 5 to 18
+- **Q_distribution.png** - Table of limiting distribution Q
+- **Q_quantiles.png** - Table of quantiles of Q
